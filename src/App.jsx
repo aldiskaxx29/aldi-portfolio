@@ -1,23 +1,20 @@
-import React from 'react'
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Nav from './components/Nav'
-import About from './components/About'
-import Services from './components/Services'
-import Work from './components/Work'
-import Contact from './components/Contact'
+import React, { useContext } from 'react'
+import { Contex } from './context/MyContext'
 
 const App = () => {
+  const {produk, setProduk} = useContext(Contex);
+  console.log('pr', produk);
+
+  const handleClick = () => {
+    const filter = produk.filter(item => item.id != 1);
+    setProduk(filter);
+    console.log('klik', produk, filter);
+  }
+  
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden w-full'>
-      <Header/>
-      <Banner/>
-      <Nav/>
-      <About/>
-      <Services/>
-      <Work/>
-      <Contact/>
-      <div className='h-[5000px]'></div>
+    <div>
+      <div className='text-black'>APP</div>
+      <button onClick={handleClick} className='p-2 bg-red-500 text-normal font-bold rounded-sm'>KLIK</button>
     </div>
   )
 }
