@@ -97,7 +97,7 @@ const App = () => {
                 <p className='text-3xl font-bold'>Muhamad Aldi Setiawan</p>
                 <p>Web Developer, Web Application, Full-Stack Web Developer with the ability to learn and collaborate in rapidly changing environments and processes</p>
                 <div className='flex gap-4'>
-                  <button className='py-2 px-4 rounded-xl bg-gradient-to-r from-blue-800 to-purple-800'>HIRE ME</button>
+                  <a href='https://api.whatsapp.com/send?phone=6287701536399' target='_blank' className='py-2 px-4 rounded-xl bg-gradient-to-r from-blue-800 to-purple-800'>HIRE ME</a>
                   <button onClick={handleDownload} className='py-2 px-4 rounded-xl bg-gradient-to-r from-red-500 to-red-800'>Download CV</button>
                 </div>
               </div>
