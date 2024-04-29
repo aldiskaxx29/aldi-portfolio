@@ -6,6 +6,8 @@ import {motion} from 'framer-motion'
 import { fadeIn } from '../variants'
 
 const Banner = () => {
+
+
   return (
     <section className='section' id='home'>
       <div className='container mx-auto'>

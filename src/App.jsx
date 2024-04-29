@@ -53,7 +53,17 @@ const App = () => {
     slidesToShow: 4,
     slidesToScroll: 1
   };
-  
+
+  const handleDownload = () => {
+    const downloadCV = document.createElement('a');
+    downloadCV.href = 'https://drive.google.com/file/d/1TRLmktheednGJhl_7xER9PyThQsgKdJF/view?usp=drive_link';
+    downloadCV.download = 'CV-M-Aldi-Setiawan.pdf';
+    document.body.appendChild(downloadCV);
+    downloadCV.click();
+    document.body.removeChild(downloadCV);
+  }
+
+
   return (
     <div className='space-y-3 bg-gradient-to-r from-blue-950 to-slate-800'>
       <div className='bg-gradient-to-r from-blue-950 to-slate-800 h-screen'>
@@ -70,7 +80,7 @@ const App = () => {
               </ul>
             </div>
             <div>
-              <button className='py-2 px-6 font-bold bg-gradient-to-r from-green-700 to-green-600 rounded-full'>CONTAC</button>
+              <a href='https://api.whatsapp.com/send?phone=6287701536399' target='_blank' className='py-2 px-6 font-bold bg-gradient-to-r from-green-700 to-green-600 rounded-full'>CONTAC</a>
             </div>
         </div>
         <div className='max-w-7xl mx-auto'>
@@ -88,7 +98,7 @@ const App = () => {
                 <p>Web Developer, Web Application, Full-Stack Web Developer with the ability to learn and collaborate in rapidly changing environments and processes</p>
                 <div className='flex gap-4'>
                   <button className='py-2 px-4 rounded-xl bg-gradient-to-r from-blue-800 to-purple-800'>HIRE ME</button>
-                  <button className='py-2 px-4 rounded-xl bg-gradient-to-r from-red-500 to-red-800'>Download CV</button>
+                  <button onClick={handleDownload} className='py-2 px-4 rounded-xl bg-gradient-to-r from-red-500 to-red-800'>Download CV</button>
                 </div>
               </div>
             </div>
@@ -119,49 +129,49 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className='max-w-7xl mx-auto space-y-2'>
+          <div className='max-w-7xl mx-auto space-y-4'>
             <div className='py-3'>
               <h2 className='text-center'>SKILS ME</h2>
             </div>
             <div className=''>
               <p>FRONT END</p>
               <div className='grid grid-cols-6 gap-3'>
-                <img src={next} className='w-20 h-20 ' alt="" />
-                <img src={angular} className='w-20 h-20 ' alt="" />
-                <img src={html} className='w-20 h-20 '  alt="" />
-                <img src={css} className='w-20 h-20 '  alt="" />
-                <img src={vue} className='w-20 h-20 '  alt="" />
-                <img src={react} className='w-20 h-20 '  alt="" />
-                <img src={tailwind} className='w-20 h-20 '  alt="" />
-                <img src={material} className='w-20 h-20 '  alt="" />
-                <img src={js} className='w-20 h-20 '  alt="" />
-                <img src={botstrap} className='w-20 h-20 '  alt="" />
-                <img src={redux} className='w-20 h-20 '  alt="" />
-                <img src={jquery} className='w-20 h-20 '  alt="" />
+                <img src={next} className='w-20 h-20 rounded-full object-fit' alt="" />
+                <img src={angular} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={html} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={css} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={vue} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={react} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={tailwind} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={material} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={js} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={botstrap} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={redux} className='w-20 h-20  rounded-full object-fit'  alt="" />
+                <img src={jquery} className='w-20 h-20  rounded-full object-fit'  alt="" />
               </div>
             </div>
             <div>
               <p>BACK END</p>
               <div className='grid grid-cols-6 gap-3'>
-                <img src={php} className='w-20 h-20' alt="" />
-                <img src={laravel} className='w-20 h-20' alt="" />
-                <img src={codeigniter} className='w-20 h-20' alt="" />
-                <img src={golang} className='w-20 h-20' alt="" />
-                <img src={express} className='w-20 h-20' alt="" />
-                <img src={node} className='w-20 h-20' alt="" />
-                <img src={appache} className='w-20 h-20' alt="" />
-                <img src={nginx} className='w-20 h-20' alt="" />
+                <img src={php} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={laravel} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={codeigniter} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={golang} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={express} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={node} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={appache} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={nginx} className='w-20 h-20  rounded-full object-fit' alt="" />
               </div>
             </div>
             <div>
               <p>DATABASE</p>
               <div className='grid grid-cols-6 gap-3'>
-                <img src={json} className='w-20 h-20' alt="" />
-                <img src={mongodb} className='w-20 h-20' alt="" />
-                <img src={mysql} className='w-20 h-20' alt="" />
-                <img src={postgre} className='w-20 h-20' alt="" />
-                <img src={redis} className='w-20 h-20' alt="" />
-                <img src={sqlite} className='w-20 h-20' alt="" />
+                <img src={json} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={mongodb} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={mysql} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={postgre} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={redis} className='w-20 h-20  rounded-full object-fit' alt="" />
+                <img src={sqlite} className='w-20 h-20  rounded-full object-fit' alt="" />
               </div>
             </div>
           </div>
